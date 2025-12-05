@@ -1,4 +1,4 @@
-"""2025_advent_of_code."""
+"""advent_of_code_2025."""
 
 
 def main() -> None:

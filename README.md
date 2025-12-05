@@ -44,7 +44,7 @@ git push -u origin main
 We've included a bunch of useful CLI commands for common project tasks using [taskipy](https://github.com/taskipy/taskipy).
 
 ```
-# run src/2025_advent_of_code/2025_advent_of_code.py
+# run src/advent_of_code_2025/advent_of_code_2025.py
 task run
 
 # run all tests
@@ -74,13 +74,13 @@ A Dockerfile optimized to reduce the image size has been included. To get it up 
 **Step 1**: Build your Docker image.
 
 ```
-docker build --progress=plain -t "2025_advent_of_code:Dockerfile" .
+docker build --progress=plain -t "advent_of_code_2025:Dockerfile" .
 ```
 
 **Step 2**: Run your new image.
 
 ```
-docker run --rm 2025_advent_of_code:Dockerfile
+docker run --rm advent_of_code_2025:Dockerfile
 ```
 
 ## Docs Generation + Publishing

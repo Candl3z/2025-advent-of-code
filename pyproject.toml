@@ -1,6 +1,6 @@
 
 [project]
-name = "2025_advent_of_code"
+name = "advent_of_code_2025"
 version = "0.1.0"
 description = "A brief description of your project."
 authors = [{ name = "Parker", email = "parker.avery1295@gmail.com" }]
@@ -55,7 +55,7 @@ publish = { cmd = "portray on_github_pages", help = "Publish documentation on Gi
 tests = { cmd = "pytest --verbose --color=yes tests", help = "Run all tests using pytest" }
 nox = { cmd = "nox -s tests", help = "Run tests in a nox session" }
 coverage = { cmd = "coverage run -m pytest tests && coverage report", help = "Generate coverage report" }
-run = { cmd = "uv run ./src/2025_advent_of_code/2025_advent_of_code.py", help = "Run main application" }
+run = { cmd = "uv run ./src/advent_of_code_2025/advent_of_code_2025.py", help = "Run main application" }
 
 [tool.ruff]
 line-length = 100
@@ -119,4 +119,3 @@ site_name = "2025 Advent of Code"
 name = "material"
 custom_dir = "docs"
 palette = {scheme= "slate", primary="deep purple", accent="purple"}
-
