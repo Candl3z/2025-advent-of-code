@@ -1,9 +1,12 @@
-"""advent_of_code_2025."""
+from day1 import day1_part2
+from day2 import day2_part1, day2_part2
 
 
 def main() -> None:
-    """Main function descriptor."""
-    print("Hello, World!")
+    print("Day 1 Part 1: N/A")
+    print("Day 1 Part 2:", day1_part2())
+    print("Day 2 Part 1:", day2_part1())
+    print("Day 2 Part 2:", day2_part2())
 
 
 if __name__ == "__main__":
