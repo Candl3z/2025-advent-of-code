@@ -5,7 +5,7 @@ version = "0.1.0"
 description = "A brief description of your project."
 authors = [{ name = "Parker", email = "parker.avery1295@gmail.com" }]
 readme = "README.md"
-license = {file = "LICENSE"}
+license = { file = "LICENSE" }
 keywords = ["python"]
 requires-python = ">=3.11,<4"
 classifiers = [
@@ -17,13 +17,11 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Typing :: Typed",
 ]
-dependencies = [
-]
+dependencies = []
 
 [dependency-groups]
 dev = [
     "mypy >=1.16.1",
-    "nox>=2025.5.1",
     "pytest>=8.4.1",
     "coverage>=7.8.2",
     "ruff>=0.12.0",
@@ -69,25 +67,9 @@ pydocstyle.convention = "google"
 fixable = ["ALL"]
 select = ["ALL"]
 ignore = [
-    "FA102", # Flake8-future-annotations
-    "F401", # Disable fix for unused imports
-    "B904", # Allow raising exceptions without from e
-    "PLR0913", # too many arguments
-    "CPY", # Flake8-copyright
     "T201", # Debugging print statements
-    "ERA", # Eradicate – detects commented-out code
-    "BLE001", # Catch-all exceptions
-    "D100", # missing docstring in public module
-    "D105", # undocumented magic method
-    "D107", # undocumented public init
-    "D203", # incorrect-blank-line-before-class
-    "D205", # line-between-summary-and-description
-    "D212", # multi-line-summary-first-line
-    "D400", # missing-trailing-period
-    "D407", # missing-dashed-underline-after-section
-    "S311", # rand-usage
-    "EM102", # f-string-exception
-    "TRY003", # long-exception-messages
+    "D101", # Missing docstring in public class
+
 ]
 
 
@@ -118,4 +100,4 @@ site_name = "2025 Advent of Code"
 [tool.portray.mkdocs.theme]
 name = "material"
 custom_dir = "docs"
-palette = {scheme= "slate", primary="deep purple", accent="purple"}
+palette = { scheme = "slate", primary = "deep purple", accent = "purple" }
