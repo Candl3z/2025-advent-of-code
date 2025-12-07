@@ -1,12 +1,15 @@
 {
-  "python.analysis.extraPaths": ["./src/advent_of_code_2025"],
-  "python.testing.pytestArgs": ["tests"],
+  "python.analysis.extraPaths": [
+    "./src/advent_of_code_2025"
+  ],
+  "python.testing.pytestArgs": [
+    "tests",
+    "--log-cli-level=DEBUG"
+  ],
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true,
   "ruff.configurationPreference": "filesystemFirst",
   "ruff.configuration": "pyproject.toml",
-
-
   // mypy settings
   "python.linting.mypyEnabled": true,
   "python.linting.mypyArgs": [
@@ -15,5 +18,4 @@
     "--show-column-numbers",
     "--strict"
   ]
-
 }
