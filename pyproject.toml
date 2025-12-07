@@ -60,7 +60,6 @@ line-length = 100
 indent-width = 4
 format.indent-style = "space"
 target-version = "py313"
-unsafe-fixes = true
 src = ["src", "tests"]
 
 [tool.ruff.lint]
@@ -68,13 +67,16 @@ pydocstyle.convention = "google"
 fixable = ["ALL"]
 select = ["ALL"]
 ignore = [
-    "T201", # Debugging print statements
     "D100", # Missing docstring in public module
     "D101", # Missing docstring in public class
     "D102", # Missing docstring in public method
     "D103", # Missing docstring in public function
 ]
-per-file-ignores = { "tests/*.py" = ["S101"] }
+per-file-ignores = { "tests/*.py" = [
+    "S101",
+], "advent_of_code_2025.py" = [
+    "T201",
+] }
 
 
 [tool.mypy]
