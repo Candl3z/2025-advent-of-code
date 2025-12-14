@@ -1,4 +1,8 @@
-from src.advent_of_code_2025.day9 import cal_max_area, get_area
+from src.advent_of_code_2025.day9 import (
+    calc_max_area,
+    check_bounded,
+    get_area,
+)
 
 
 def test_get_area() -> None:
@@ -18,8 +22,28 @@ def test_get_area() -> None:
 def test_cal_max_area() -> None:
     input_data = [(7, 1), (11, 1), (11, 7), (9, 7), (9, 5), (2, 5), (2, 3), (7, 3)]
 
-    output = cal_max_area(input_data)
+    output = calc_max_area(input_data)
 
     expected = 50
+
+    assert output == expected
+
+
+def test_check_bounded() -> None:
+    points_list = [(7, 1), (11, 1), (11, 7), (9, 7), (9, 5), (2, 5), (2, 3), (7, 3)]
+
+    bounded_point = (5, 4)
+    unbounded_point = (1, 1)
+
+    assert check_bounded(bounded_point, points_list) is True
+    assert check_bounded(unbounded_point, points_list) is False
+
+
+def test_calc_max_area_bounded() -> None:
+    input_data = [(7, 1), (11, 1), (11, 7), (9, 7), (9, 5), (2, 5), (2, 3), (7, 3)]
+
+    output = calc_max_area(input_data, bounded=True)
+
+    expected = 24
 
     assert output == expected

@@ -2,7 +2,7 @@ from day1 import day1_part2
 from day2 import day2_part1, day2_part2
 from day6 import day6_part1, day6_part2
 from day7 import day7_part1, day7_part2
-from day9 import day9_part1
+from day9 import day9_part1, day9_part2
 
 
 def main() -> None:
@@ -15,6 +15,7 @@ def main() -> None:
     print("Day 7 Part 1:", day7_part1())
     print("Day 7 Part 2:", day7_part2())
     print("Day 9 Part 1:", day9_part1())
+    print("Day 9 Part 2:", day9_part2())
 
 
 if __name__ == "__main__":
